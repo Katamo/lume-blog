@@ -36,3 +36,4 @@ jobs:
           repo: Katamo/public-blog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PATH: 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
