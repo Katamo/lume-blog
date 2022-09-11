@@ -35,5 +35,5 @@ jobs:
           build_dir: _site
           repo: Katamo/public-blog
         env:
-          GITHUB_TOKEN: ${{ secrets.PUBLISH_SECRET }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PATH: ${{ secrets.PUBLISH_SECRET }}
