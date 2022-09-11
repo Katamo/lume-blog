@@ -33,6 +33,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v2.0.1
         with:
           build_dir: _site
-          repo: https://github.com/Katamo/public-blog
+          repo: Katamo/public-blog
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
