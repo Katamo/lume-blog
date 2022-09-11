@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://katamo.github.io/lume-blog/posts/firstpost/</loc>
+    <lastmod>2018-05-01</lastmod>
+  </url>
+  <url>
+    <loc>https://katamo.github.io/lume-blog/posts/secondpost/</loc>
+    <lastmod>2018-07-04</lastmod>
+  </url>
+  <url>
+    <loc>https://katamo.github.io/lume-blog/posts/thirdpost/</loc>
+    <lastmod>2018-08-24</lastmod>
+  </url>
+  <url>
+    <loc>https://katamo.github.io/lume-blog/posts/fourthpost/</loc>
+    <lastmod>2018-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://katamo.github.io/lume-blog/404.html</loc>
+    <lastmod>2022-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://katamo.github.io/lume-blog/tags/</loc>
+    <lastmod>2022-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://katamo.github.io/lume-blog/about/</loc>
+    <lastmod>2022-09-11</lastmod>
+  </url>
+  <url>
+    <loc>https://katamo.github.io/lume-blog/</loc>
+    <lastmod>2022-09-11</lastmod>
+  </url>
+</urlset>
