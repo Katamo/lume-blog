@@ -40,4 +40,4 @@ jobs:
           destination_branch_create: 'gh-pages'
           user_email: 'oscardemata@gmail.com'
           user_name: 'Katamo'
-          commit_message: 'New version release'
+          commit_message: 'New version release ${{ env.VERSION }}'
