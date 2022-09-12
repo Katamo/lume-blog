@@ -44,7 +44,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source_file: '_site/*'
+          source_file: '_site/.'
           destination_repo: 'Katamo/public-blog'
 # destination_folder: '../'
           user_email: 'oscardemata@gmail.com'
