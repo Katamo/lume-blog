@@ -28,17 +28,6 @@ jobs:
       - name: Build site
         run: |
           deno task build --location=https://katamo.github.io/public-blog/
-
-      # - name: Deploy
-      #   uses: crazy-max/ghaction-github-pages@v2.0.1
-      #   with:
-      #     build_dir: _site
-      #     repo: Katamo/public-blog
-      #     target_branch: main
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #     GH_PATH: ${{ secrets.PUBLISH_SECRET }}
-      
       - name: Deploy te public site
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
@@ -46,7 +35,6 @@ jobs:
         with:
           source_file: '_site/.'
           destination_repo: 'Katamo/public-blog'
-# destination_folder: '../'
           user_email: 'oscardemata@gmail.com'
           user_name: 'Katamo'
           commit_message: 'New version release'
