@@ -46,7 +46,7 @@ jobs:
         with:
           source_file: '_site/*'
           destination_repo: 'Katamo/public-blog'
-          # destination_folder: '../'
+# destination_folder: '../'
           user_email: 'oscardemata@gmail.com'
           user_name: 'Katamo'
           commit_message: 'New version release'
