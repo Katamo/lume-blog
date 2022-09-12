@@ -30,7 +30,7 @@ jobs:
           deno task build --location=https://katamo.github.io/public-blog/
 
       - name: Deploy te public site
-        uses: dmnemec/copy_file_to_another_repo_action@main
+        uses: Katamo/copy_file_to_another_repo_action@main
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
