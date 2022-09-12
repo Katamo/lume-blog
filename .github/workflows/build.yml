@@ -28,6 +28,7 @@ jobs:
       - name: Build site
         run: |
           deno task build --location=https://katamo.github.io/public-blog/
+
       - name: Deploy te public site
         uses: dmnemec/copy_file_to_another_repo_action@main
         env:
@@ -35,6 +36,8 @@ jobs:
         with:
           source_file: '_site/.'
           destination_repo: 'Katamo/public-blog'
+          destination_branch: 'main'
+          destination_branch_create: 'gh-pages'
           user_email: 'oscardemata@gmail.com'
           user_name: 'Katamo'
           commit_message: 'New version release'
