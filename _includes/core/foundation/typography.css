@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&family=Source+Serif+Pro:wght@300;400;600&display=swap');
+
+:root {
+  --font-family: 'Source Sans Pro', sans-serif;
+  --font-family-serif: 'Source Serif Pro', serif;
+  --font-family-mono: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+
+  --font-weight-light: 300;
+  --font-weight-medium: 400;
+  --font-weight-bold: 600;
+
+  --scale-00: 0.8rem;
+  --scale-0: 1rem;
+  --scale-1: 1.125rem;
+  --scale-2: 1.25rem;
+  --scale-3: 1.5rem;
+  --scale-4: 1.875rem;
+  --scale-5: 2.25rem;
+  --scale-6: 3rem;
+  --scale-7: 3.75rem;
+  --scale-8: 4.5rem;
+  --scale-9: 6rem;
+  --scale-10: 8rem;
+
+  --line-none: 1rem;
+  --line-xs: 1.25rem;
+  --line-sm: 1.275rem;
+  --line-md: 1.5rem;
+  --line-lg: 1.625rem;
+  --line-xl: 2rem;
+
+  --font-size-small: 0.8rem;
+  --font-size-0: 1.25rem/2rem;
+
+  --font-size-heading-1: 3rem/5rem;
+  --font-size-heading-2: 2.5rem/3rem;
+  --font-size-heading-3: 2rem/2.5rem;
+  --font-size-heading-4: 1.5rem/2rem;
+  --font-size-heading-5: 1.25rem/2rem;
+
+
+  /* font: font-style font-variant font-weight font-size/line-height font-family; */
+  --typeset-body: var(--font-weight-light) var(--font-size-0) var(--font-family-serif);
+  --typeset-code: var(--font-weight-medium) var(--font-size-0) var(--font-family-mono);
+  
+  --typeset-heading-1: var(--font-weight-bold) var(--font-size-heading-1) var(--font-family);
+  --typeset-heading-2: var(--font-weight-bold) var(--font-size-heading-2) var(--font-family);
+  --typeset-heading-3: var(--font-weight-bold) var(--font-size-heading-3) var(--font-family);
+  --typeset-heading-4: var(--font-weight-bold) var(--font-size-heading-4) var(--font-family);
+  --typeset-heading-5: var(--font-weight-bold) var(--font-size-heading-5) var(--font-family);
+
+  --typeset-small: var(--font-weight-light) var(--scale-00) var(--font-family-serif);
+
+/* 
+  @media(--bp-from--md) {
+    --font-size-heading-1: 4rem/4rem;
+  } */
+}
