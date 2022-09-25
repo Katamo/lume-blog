@@ -1,11 +1,13 @@
 .navbar {
+  font: var(--typeset-action);
   display: flex;
   flex-wrap: wrap;
-  position: absolute;
+  box-shadow: var(--shadow-xs);
+  padding: 0 4--sp;
 
   & a {
     display: block;
-    padding: 1em;
+    padding: 4--sp 8--sp 4--sp 0;
 
     &:not(:hover) {
       text-decoration: none;
@@ -13,12 +15,19 @@
   }
 }
 
+.navbar-home {
+  font: var(--typeset-logo);
+  padding: 0;
+  position: absolute
+}
+
 .navbar-links {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  flex: 0 0 80ch;
 
   & [aria-current="page"] {
     font-weight: bold;

@@ -5,20 +5,25 @@ pre,table,fieldset,hr{
     /* margin: 3rem 0 8--sp 0; */
 }
 
-html {font-size: 1rem; }
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
+html {font-size: 1rem; }
 
 body {
   font: var(--typeset-body);
+  --spacing: 1rem;
 
-  /* &:has(input[type="checkbox"]:checked) {
+  &:has(input[type="checkbox"]:checked) {
     background-image: repeating-linear-gradient(lightCyan 0 var(--spacing), mistyRose 0  calc(var(--spacing) * 2));
   }
   & input[type="checkbox"] {
     position: absolute;
     top: 0;
     right: 0;
-  } */
+  }
 }
 
 h1 { font: var(--typeset-heading-1);}
