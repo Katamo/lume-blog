@@ -14,9 +14,8 @@
   <body>
     <nav class="navbar">
       <a href="/" class="navbar-home">
-        <strong>{{ site.title }}</strong>
+        {{ site.title }}
       </a>
-
       <ul class="navbar-links">
       {%- for entry in search.pages("menu.visible=true", "menu.order") %}
         <li>
@@ -27,9 +26,12 @@
       {%- endfor %}
       </ul>
 
-      <div class="navbar-search">
-        <oom-search label="Search" placeholder="Post title or tag" src="{{ '/search.json' | url }}"></oom-search>
-      </div>
+      {%- if false %}
+        <div class="navbar-search">
+          <oom-search label="Search" placeholder="Post title or tag" src="{{ '/search.json' | url }}"></oom-search>
+        </div>
+      {% endif %}
+      <input type="checkbox" checked></input>
     </nav>
 
     <main class="{{ bodyClass }}">
