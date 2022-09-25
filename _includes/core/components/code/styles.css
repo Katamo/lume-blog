@@ -1,0 +1,6 @@
+code {
+  & pre {
+    font: var(--typeset-code);
+    padding: 8--sp;
+  }
+}

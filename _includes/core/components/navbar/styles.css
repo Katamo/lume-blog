@@ -27,7 +27,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  flex: 0 0 80ch;
+  flex: 0 0 var(--main-width);
 
   & [aria-current="page"] {
     font-weight: bold;

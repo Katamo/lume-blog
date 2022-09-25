@@ -1,8 +1,9 @@
-.post-header,h1,h2,h3,h4,h5,h6,hgroup,
-ul,ol,dd,
-p,figure,
-pre,table,fieldset,hr{
-    /* margin: 3rem 0 8--sp 0; */
+:root {
+  --margin-headings: 1.5rem 0 1rem 0;
+
+  @media bp-from--md {
+    --margin-headings: 2rem 0 1rem 0;
+  }
 }
 
 html, body {
@@ -20,7 +21,7 @@ body {
     background-image: repeating-linear-gradient(lightCyan 0 var(--spacing), mistyRose 0  calc(var(--spacing) * 2));
   }
   & input[type="checkbox"] {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
   }
@@ -33,20 +34,11 @@ h4 { font: var(--typeset-heading-4);}
 h5 { font: var(--typeset-heading-5);}
 
 h1,h2,h3,h4,h5,h6 {
-  margin: 2rem 0 1rem 0;
+  margin: var(--margin-headings);
 }
 
 p {
   margin-bottom: 1rem;
-}
-
-main {
-  max-width: 80ch;
-  margin: 0 auto;
-
-  & > :first-child {
-    margin-top: 0;
-  }
 }
 
 a {
@@ -75,11 +67,6 @@ table {
   & th {
     padding-right: 4--sp;
   }
-}
-
-pre,
-code {
-  font: var(--typeset-code)
 }
 
 hr {}
