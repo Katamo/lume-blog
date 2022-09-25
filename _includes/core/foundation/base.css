@@ -1,8 +1,9 @@
 :root {
-  --margin-headings: 1.5rem 0 1rem 0;
+  --margin-headings: 6--sp 0 4--sp 0;
+  --margin-textlines: 4--sp;
 
   @media bp-from--md {
-    --margin-headings: 2rem 0 1rem 0;
+    --margin-headings: 8--sp 0 4--sp 0;
   }
 }
 
@@ -11,11 +12,11 @@ html, body {
   padding: 0;
 }
 
-html {font-size: 1rem; }
+html {font-size: 4--sp; }
 
 body {
   font: var(--typeset-body);
-  --spacing: 1rem;
+  --spacing: 4--sp;
 
   &:has(input[type="checkbox"]:checked) {
     background-image: repeating-linear-gradient(lightCyan 0 var(--spacing), mistyRose 0  calc(var(--spacing) * 2));
@@ -37,8 +38,8 @@ h1,h2,h3,h4,h5,h6 {
   margin: var(--margin-headings);
 }
 
-p {
-  margin-bottom: 1rem;
+p, ol, ul, dl {
+  margin-bottom: var(--margin-textlines);
 }
 
 a {
@@ -71,4 +72,8 @@ table {
 
 hr {}
 
-small, .text_small {font-size: 0.8rem;}
+ul,ol {
+  list-style-position: inside;
+}
+
+small, .text_small {font-size: 0.9rem;}
