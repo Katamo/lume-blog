@@ -1,3 +1,6 @@
 @import 'foundation/styles.css';
 
+@import 'components/code/styles.css';
+@import 'components/footer/styles.css';
+@import 'components/layout/default/styles.css';
 @import 'components/navbar/styles.css';
