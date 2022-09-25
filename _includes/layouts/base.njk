@@ -11,7 +11,7 @@
     <link rel="alternate" href="/feed.json" type="application/json" title="{{ site.title }}">
     <script type="module" src="/js/main.js"></script>
   </head>
-  <body>
+  <body class="layout-default">
     <nav class="navbar">
       <a href="/" class="navbar-home">
         {{ site.title }}
@@ -38,7 +38,8 @@
       {{ content | safe }}
     </main>
 
-    <footer></footer>
+    <!-- footer -->
+    {% include "../templates/footer.njk" %}
 
     <!-- Current page: {{ url }} -->
   </body>
