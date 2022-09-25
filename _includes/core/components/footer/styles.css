@@ -7,8 +7,10 @@ footer {
   height: 12--sp;
   margin-top: 18--sp;
   display: flex;
-  box-shadow: var(--shadow-xs-inverted);
   align-items: center;
+  box-shadow: var(--shadow-xs-inverted);
+  position: absolute;
+  bottom: 0;
 
 
   & .footer-content {

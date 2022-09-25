@@ -43,7 +43,14 @@ p, ol, ul, dl {
 }
 
 a {
-  color: var(--blue);
+  /* color: var(--color-blue-700); */
+  /* text-shadow: -5px 0px 2px -5px rgba(0,72,255,0.8), 5px 0px 2px -5px rgba(255,72,0,0.8); */
+  /* text-shadow: 0px 0px 0px rgba(0,0,255,0.2), 0px 0px 0px rgba(255,0,0,0.2);
+  transition: text-shadow 1s;
+
+  &:hover {
+    text-shadow: -.5px 0px 20px rgba(0,0,255,1), .5px 0px 20px rgba(255,0,0,1);
+  } */
 }
 
 .post-tags {
