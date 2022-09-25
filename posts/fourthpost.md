@@ -9,7 +9,6 @@ tags:
 ---
 <h1>Testing display of HTML elements</h1>
 <p>This page contains a bunch of HTML Elements and text. You can copy the source code and use it test out various CSS Properties. For testing purposes, you may use <dfn>internal styles. Recall that these CSS rules are placed in between the <code>head</code> tags using the following format:</dfn></p>
-<input type="checkbox" checked></input>
 <code>
 	<pre>&lt;style type="text/css"&gt;
   selector {
@@ -17,7 +16,6 @@ tags:
   }
 &lt;/style&gt;</pre>
 </code>
-
 
 <h1>This is 1st level heading</h1>
 <p>This is a test paragraph.</p>

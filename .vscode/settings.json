@@ -4,5 +4,12 @@
   "deno.unstable": true,
   "deno.suggest.imports.hosts": {
     "https://deno.land": true
-  }
+  },
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/tmp": true,
+    ".vscode/scratchpad": true,
+  },
 }
