@@ -6,33 +6,28 @@ import codeHighlight from "lume/plugins/code_highlight.ts";
 import basePath from "lume/plugins/base_path.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import resolveUrls from "lume/plugins/resolve_urls.ts";
-import gpm from "https://deno.land/x/gpm@v0.4.1/mod.ts";
-import postcssConvertUnits from "./js/vendor/postcss-convert-units/index.js"
-// import postcssFontFormatKeywords from 'https://github.com/Katamo/postcss-convert-units/blob/main/mod.js'
+import postcssConvertUnits from "convert-units/dist/mod.ts?s=default";
 
+import cssRules from './_includes/core/cssrules.ts';
 
 const site = lume({
-  location: new URL("https://example.com/"),
+  location: new URL("https://katamo.github.io/public-blog/"),
 });
 
 site
   .ignore("README.md")
   .copy("img")
   .use(
-    postcss(
-      {
-        plugins: [
-          postcssConvertUnits({
-            units: [
-              {
-                from: 'sp',
-                convert: val => `${val * 0.25}rem`
-              }
-            ],
-          })
-        ],
-      }
-    )
+    postcss({
+      plugins: [
+        postcssConvertUnits({
+          rules: {
+            ...cssRules,
+          }
+        })
+      ],
+      keepDefaultPlugins: true,
+    })
   )
   .use(terser())
   .use(date())
@@ -40,9 +35,9 @@ site
   .use(basePath())
   .use(slugifyUrls({ alphanumeric: false }))
   .use(resolveUrls())
-  .addEventListener(
-    "beforeBuild",
-    () => gpm(["oom-components/searcher"], "js/vendor"),
-  );
+  // .addEventListener(
+  //   "beforeBuild",
+  //   () => gpm(["oom-components/searcher"], "js/vendor"),
+  // );
 
 export default site;

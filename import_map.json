@@ -1,5 +1,6 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.10.4/"
+    "lume/": "https://deno.land/x/lume@v1.10.4/",
+    "convert-units/": "https://deno.land/x/postcss_convert_units@v2.1.0/"
   }
 }
