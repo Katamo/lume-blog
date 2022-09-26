@@ -12,27 +12,7 @@
     <script type="module" src="/js/main.js"></script>
   </head>
   <body class="layout-default">
-    <nav class="navbar">
-      <a href="/" class="navbar-home">
-        {{ site.title }}
-      </a>
-      <ul class="navbar-links">
-      {%- for entry in search.pages("menu.visible=true", "menu.order") %}
-        <li>
-          <a href="{{ entry.data.url }}"{% if entry.data.url == url %} aria-current="page"{% endif %}>
-            {{ entry.data.menu.title or entry.data.title }}
-          </a>
-        </li>
-      {%- endfor %}
-      </ul>
-
-      {%- if false %}
-        <div class="navbar-search">
-          <oom-search label="Search" placeholder="Post title or tag" src="{{ '/search.json' | url }}"></oom-search>
-        </div>
-      {% endif %}
-      <input type="checkbox" checked></input>
-    </nav>
+    {% include "../templates/nav.njk" %}
 
     <main class="{{ bodyClass }}">
       {{ content | safe }}
