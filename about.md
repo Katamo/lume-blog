@@ -1,10 +1,12 @@
 ---
-layout: layouts/post.njk
+layout: layouts/default.njk
 title: About Me
-templateClass: tmpl-post
+templateClass: tmpl-about-me
 menu:
   visible: true
   order: 2
 ---
 
-I am a person that writes stuff.
+# About me
+
+<p>Hi! I'm Óscar freelance frontend developer based in a small island in the Mediterranean
