@@ -1,10 +1,10 @@
 :root {
   --main-width: 100%;
-  --main-paddings: 0 5--sp;  
-  --main-margin: 0;
+  --main-paddings: 0 5--sp;
+  --main-margin: 12--sp 0 12--sp 0;
 
   @media --bp-from--md {
-    --main-margin: 0 auto;
+    --main-margin: 24--sp auto 24--sp auto;
     --main-width: 65ch;
   }
   
@@ -17,6 +17,9 @@
 
 
 .layout-default {
+  position: relative;
+  padding-bottom: var(--footer-height);
+
   & main {
     padding: var(--main-paddings);
     max-width: var(--main-width);
