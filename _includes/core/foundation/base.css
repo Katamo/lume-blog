@@ -2,7 +2,7 @@
   --margin-headings: 6--sp 0 4--sp 0;
   --margin-textlines: 4--sp;
 
-  @media bp-from--md {
+  @media --bp-from--md {
     --margin-headings: 8--sp 0 4--sp 0;
   }
 }
@@ -10,6 +10,7 @@
 html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 html {font-size: 4--sp; }

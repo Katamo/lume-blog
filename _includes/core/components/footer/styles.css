@@ -18,5 +18,11 @@ footer {
   & .footer-content {
     margin: 0 auto;
     padding: var(--footer-padding);
+
+    & span {
+      @media --bp-to--md {
+        display: block;
+      }
+    }
   }
 }

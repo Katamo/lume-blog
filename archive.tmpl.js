@@ -10,7 +10,7 @@ export default function* ({ search, paginate }) {
     // Show the first page in the menu
     if (data.pagination.page === 1) {
       data.menu = {
-        visible: true,
+        visible: false,
         order: 1,
       };
     }
