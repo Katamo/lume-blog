@@ -2,11 +2,13 @@
 layout: layouts/default.njk
 title: Changelog
 templateClass: tmpl-changelog
+url: /changelog/
+type: changelogIndex
 menu:
   visible: true
   order: 3
 ---
-# Changelog
+<h1>Changelog</h1>
 
 <p>This page tracks advances on my brand new blog project. Taking the shape of a standard changelog I will track here; changes, bug fixes and added features for this project.</p>
 <h2>Why?</h2>
@@ -19,12 +21,5 @@ My main motivation is to deal against my tendency to leave projects unfinished, 
 <p>I will track the advances on the project in this page.</p>
 <p>Let's see how far it goes.</p>
 
-## Version v0.0.1 (25/09/2022)
-* First working version of my brand new blog.
-* Instaled Lume over Deno
-* Added postCSSplugin to deal with custom css vars
-* Vertical rithm in CSS elements
-* Added custom css vars and css @media queries strategy
-* Styles for desktop + tablet + mobile
-* Added Changelog page
-* New contents internal structure
+{% include "../../core/modules/changelog-list/index.njk" %}
+
