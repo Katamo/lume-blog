@@ -9,3 +9,4 @@ priority: 2
 * group issues in page by priority
 * create visual identification for priority
 * create template for issues
+* issues in page dont list issues
