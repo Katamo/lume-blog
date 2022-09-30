@@ -1,5 +1,5 @@
 ---
-title: Accesibility A
+title: Search functionality
 date: 2022-09-30
 priority: 3
 ---

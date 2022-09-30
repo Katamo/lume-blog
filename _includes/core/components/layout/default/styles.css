@@ -19,6 +19,7 @@
 .layout-default {
   position: relative;
   padding-bottom: var(--footer-height);
+  height: auto;
 
   & main {
     padding: var(--main-paddings);

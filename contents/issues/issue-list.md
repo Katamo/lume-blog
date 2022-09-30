@@ -8,3 +8,4 @@ priority: 2
 * Complete description for issue page 
 * group issues in page by priority
 * create visual identification for priority
+* create template for issues
