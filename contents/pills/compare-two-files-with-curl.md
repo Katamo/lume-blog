@@ -1,3 +1,12 @@
+---
+title: Compare files with CURL
+description: Pending
+date: 2022-09-27
+tags:
+  - zsh
+  - cURL
+---
+
 curl 'https://www.melia.com/es' \
   -H 'authority: www.melia.com' \
   -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \

@@ -27,3 +27,4 @@ My main motivation is to deal against my tendency to leave projects unfinished, 
 * Added custom css vars and css @media queries strategy
 * Styles for desktop + tablet + mobile
 * Added Changelog page
+* New contents internal structure

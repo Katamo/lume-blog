@@ -62,6 +62,4 @@ const cssRules = {
   ...spacing,
 }
 
-console.log(cssRules)
-
 export default cssRules;
