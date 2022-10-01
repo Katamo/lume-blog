@@ -1,7 +1,7 @@
 ---
 title: Blockoquotes
-date: 2022-09-30
-priority: 1
+date: 2022-10-01
+priority: 2
 ---
 
-* styling blockquotes
+* advanced styling blockquotes

@@ -1,5 +1,6 @@
 @import 'foundation/styles.css';
 
+@import 'components/info/blockquote/styles.css';
 @import 'components/containers/wrapper/styles.css';
 @import 'components/code/styles.css';
 @import 'components/layout/default/styles.css';
