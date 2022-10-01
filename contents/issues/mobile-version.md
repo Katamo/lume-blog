@@ -1,6 +1,6 @@
 ---
 title: Mobile version
-date: 2022-09-30
+date: 2022-10-01
 priority: 1
 ---
 
