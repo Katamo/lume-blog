@@ -1,3 +1,4 @@
 :root {
-  
+  --color-base: rgba(255,255,255,1);
+  --color-text: rgba(15,15,15,1);
 }
