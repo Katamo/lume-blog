@@ -2,10 +2,10 @@
 layout: layouts/default.njk
 title: About Me
 templateClass: tmpl-about-me
-draft: true
+url: /about-me/
 menu:
   visible: true
-  order: 2
+  order: 5
 ---
 
 # About me
