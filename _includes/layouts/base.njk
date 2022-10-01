@@ -12,10 +12,12 @@
     <script type="module" src="/js/main.js"></script>
   </head>
   <body class="layout-default">
-    {% include "../templates/nav.njk" %}
+    {% include "../core/components/navbar/component.njk" %}
 
     <main class="{{ bodyClass }}">
-      {{ content | safe }}
+      <div class="c-wrapper" data-type="default">
+        {{ content | safe }}
+      </div>
     </main>
 
     <!-- footer -->

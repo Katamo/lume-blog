@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   box-shadow: var(--shadow-xs);
-  padding: 0 4--sp;
+  /* padding: 0 4--sp; */
 
   & a {
     display: block;

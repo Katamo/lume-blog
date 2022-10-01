@@ -1,0 +1,20 @@
+:root {
+  --wrapper-default-margin-inline: 5--sp; 
+  --wrapper-default-max-width: calc(100% - (2 * var(--wrapper-default-margin-inline)));
+
+  @media --bp-from--md {
+    --wrapper-default-margin-inline: auto;
+    --wrapper-default-max-width: 65ch;
+  }
+  
+  @media --bp-from--lg {
+    --wrapper-default-max-width: 80ch;
+  }
+}
+
+.c-wrapper {
+  &[data-type="default"] {
+    margin-inline: var(--wrapper-default-margin-inline);
+    width: var(--wrapper-default-max-width);
+  }
+}

@@ -1,0 +1,21 @@
+<nav class="navbar">
+  <a href="/" class="navbar-home">
+    {{ site.title }}
+  </a>
+  <div class="c-wrapper" data-type="default">
+    <ul class="navbar-links">
+    {%- for entry in search.pages("menu.visible=true", "menu.order") %}
+      <li>
+        <a href="{{ entry.data.url }}"{% if entry.data.url == url %} aria-current="page"{% endif %}>
+          {{ entry.data.menu.title or entry.data.title }}
+        </a>
+      </li>
+    {%- endfor %}
+    </ul>
+
+    {%- if false %}
+      {% include "../templates/navbar-search.njk" %}
+    {% endif %}
+    <input type="checkbox" checked/>
+  </div>
+</nav>

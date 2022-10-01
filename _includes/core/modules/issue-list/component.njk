@@ -1,4 +1,4 @@
-{% set issuelist = search.pages("type=issue", "priority=asc", 30) %}
+{% set issuelist = search.pages("type=issues  completed!=true", "priority=asc", 30) %}
 
 <h3>Total Issues by priority {{ issuelist.length }} </h3>
 

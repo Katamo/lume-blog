@@ -1,19 +1,11 @@
 :root {
-  --main-width: 100%;
-  --main-paddings: 0 5--sp;
-  --main-margin: 12--sp 0 12--sp 0;
+  --layout-default-block-margin: 12--sp;
 
   @media --bp-from--md {
-    --main-margin: 24--sp auto 24--sp auto;
-    --main-width: 65ch;
+    --layout-default-block-margin: 24--sp;
   }
-  
-  @media --bp-from--lg {
-    --main-width: 80ch;
-    --main-paddings: 0;
-  }
-}
 
+}
 
 
 .layout-default {
@@ -21,11 +13,9 @@
   padding-bottom: var(--footer-height);
   height: auto;
   min-height: 100%;
-
+  
   & main {
-    padding: var(--main-paddings);
-    max-width: var(--main-width);
-    margin: var(--main-margin);
+    margin-block: var(--layout-default-block-margin);
 
     & > :first-child {
       margin-top: 0;
