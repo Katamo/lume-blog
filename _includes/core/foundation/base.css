@@ -18,15 +18,6 @@ html {font-size: 4--sp; }
 body {
   font: var(--typeset-body);
   --spacing: 4--sp;
-
-  &:has(input[type="checkbox"]:checked) {
-    background-image: repeating-linear-gradient(lightCyan 0 var(--spacing), mistyRose 0  calc(var(--spacing) * 2));
-  }
-  & input[type="checkbox"] {
-    position: fixed;
-    top: 0;
-    right: 0;
-  }
 }
 
 h1 { font: var(--typeset-heading-1);}
@@ -85,3 +76,25 @@ ul,ol {
 }
 
 small, .text_small {font-size: 0.9rem;}
+
+
+
+/* DEBUG */
+body {
+  & .grid-switch {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}
+
+body[data-is-debug=true] {
+  & .grid-switch {
+    display: block;
+  }
+
+  &:has(input.grid-switch[type="checkbox"]:checked) {
+    background-image: repeating-linear-gradient(lightCyan 0 var(--spacing), mistyRose 0  calc(var(--spacing) * 2));
+  }
+}

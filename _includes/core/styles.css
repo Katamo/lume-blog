@@ -3,7 +3,7 @@
 @import 'components/containers/wrapper/styles.css';
 @import 'components/code/styles.css';
 @import 'components/layout/default/styles.css';
-@import 'components/navbar/styles.css';
 
+@import 'modules/navbar/styles.css';
 @import 'modules/footer/styles.css';
 @import 'modules/changelog-list/styles.css';
