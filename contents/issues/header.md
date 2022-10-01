@@ -5,5 +5,5 @@ priority: 2
 ---
 
 * Design header
-* Add icons 
+* Eval adding icons
 * add colors to header

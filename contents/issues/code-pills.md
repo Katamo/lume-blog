@@ -1,10 +1,7 @@
 ---
 title: Code Pills 
 date: 2022-09-30
-priority: 1
+priority: 2
 ---
 
-* create code pill section
-* create index page for codepills
-* create template for codepills
-* add codepills to homepage
+* refine pill list styles

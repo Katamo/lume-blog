@@ -7,3 +7,5 @@
 @import 'modules/navbar/styles.css';
 @import 'modules/footer/styles.css';
 @import 'modules/changelog-list/styles.css';
+@import 'modules/issue-list/styles.css';
+@import 'modules/pill-list/styles.css';
